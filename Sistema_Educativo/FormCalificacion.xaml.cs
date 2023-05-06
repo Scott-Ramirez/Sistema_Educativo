@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using AccesoDatos;
+using Entidades;
+using LogicaNegocio;
 
 namespace Sistema_Educativo
 {
@@ -19,9 +22,24 @@ namespace Sistema_Educativo
     /// </summary>
     public partial class FormCalificacion : Window
     {
+        List<Calificaciones> liscal = new List<Calificaciones>();
         public FormCalificacion()
         {
             InitializeComponent();
+            //Quitar botones del fromulario de minimizar-maximizar-cerrar
+            this.WindowStyle = WindowStyle.None;
+            // Centrar el formulario
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            //Listar los datos de la tabla al iniciar 
+            ListarCalificaciones();
+        }
+
+        //SECCION  mostrar datos en una tabla
+        public void ListarCalificaciones()
+        {
+            CalificacionLN calificacionLN = new CalificacionLN();   
+            ListaCalificacionesDtg.ItemsSource = calificacionLN.ListarCalificacionesLN();
+            liscal = (List<Calificaciones>)ListaCalificacionesDtg.ItemsSource;
         }
     }
 }

@@ -22,7 +22,7 @@
         <Button x:Name="btn_cerrar" Content="CERRAR" HorizontalAlignment="Left" Margin="412,218,0,0" VerticalAlignment="Top" Width="120" Height="40" FontFamily="Roboto" FontSize="14" FontWeight="Bold" Foreground="White" Background="#FF1C1F23" BorderBrush="White" Click="click_Cerrar"/>
         <Rectangle HorizontalAlignment="Center" Height="308" Margin="0,272,0,0" Stroke="Black" VerticalAlignment="Top" Width="580" Fill="#7FFFFFFF"/>
         <TextBox HorizontalAlignment="Left" Margin="412,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Height="30" Foreground="#FF9A9A9A" FontSize="16" FontFamily="Roboto"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,312,0,0" Height="268" VerticalAlignment="Top" HorizontalAlignment="Center" Width="580"/>
+        <DataGrid x:Name="ListaCalificacionesDtg" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,312,0,0" Height="268" VerticalAlignment="Top" HorizontalAlignment="Center" Width="580"/>
 
     </Grid>
 </Window>
