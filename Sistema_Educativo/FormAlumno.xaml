@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sistema_Educativo"
         mc:Ignorable="d"
-        Title="FormAlumno" Height="450" Width="800">
-    <Grid>
-        
+        Title="FormAlumno" Height="706" Width="700">
+    <Grid Background="#FF0E2A47">
+        <Rectangle HorizontalAlignment="Left" Height="234" Margin="10,75,0,0" Stroke="Black" VerticalAlignment="Top" Width="680" RadiusX="12.54" RadiusY="12.54" Fill="#99FFFFFF"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="25,76,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontWeight="Bold" Width="30"/>
+        <TextBox Name="id_txt" HorizontalAlignment="Left" Margin="24,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Height="30" BorderBrush="#FF29199E" Background="#7FFFFFFF" IsEnabled="False"/>
+        <Label Content="Primer Nombre" HorizontalAlignment="Left" Margin="62,78,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox Name="nombre_1"  HorizontalAlignment="Left" Margin="62,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <Label Content="Segundo Nombre" HorizontalAlignment="Left" Margin="187,78,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox x:Name="nombre_2"  HorizontalAlignment="Left" Margin="187,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <Label Content="Primer Apellido" HorizontalAlignment="Left" Margin="26,130,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox x:Name="apellido_1"  HorizontalAlignment="Left" Margin="25,154,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="281" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <Label Content="Segundo Apellido" HorizontalAlignment="Left" Margin="26,186,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox x:Name="apellido_2"  HorizontalAlignment="Left" Margin="26,210,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="281" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <Label Content="Telefono" HorizontalAlignment="Left" Margin="26,240,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox x:Name="telefono_txt"  HorizontalAlignment="Left" Margin="26,264,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <Label Content="Celular" HorizontalAlignment="Left" Margin="187,240,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox x:Name="celular_txt"  HorizontalAlignment="Left" Margin="187,264,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <Label Content="Direccion" HorizontalAlignment="Left" Margin="392,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox x:Name="direccion_txt"  HorizontalAlignment="Left" Margin="392,98,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="281" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <Label Content="Correo" HorizontalAlignment="Left" Margin="392,128,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox x:Name="correo_txt"  HorizontalAlignment="Left" Margin="392,154,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="281" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <DatePicker x:Name="fecha_nac" HorizontalAlignment="Left" Margin="392,209,0,0" VerticalAlignment="Top" Width="281" Background="#7FFFFFFF">
+            <DatePicker.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                    <GradientStop Color="#FFA3AEB9"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="#FF29199E" Offset="1"/>
+                </LinearGradientBrush>
+            </DatePicker.BorderBrush>
+        </DatePicker>
+        <Label Content="Fecha de Nacimeinto" HorizontalAlignment="Left" Margin="392,185,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <Label Content="Observaciones" HorizontalAlignment="Left" Margin="392,236,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Roboto"/>
+        <TextBox x:Name="Obsertxt"  HorizontalAlignment="Left" Margin="392,264,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="281" Height="30" BorderBrush="#FF29199E" FontSize="18" Background="#7FFFFFFF"/>
+        <Label Content="Agregar Nuevo Estudiante" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Foreground="#FFFB7575" FontSize="36" FontFamily="Roboto" FontWeight="Bold" Width="700" HorizontalContentAlignment="Center"/>
+        <Button x:Name="btnLimpiar" Content="LIMPIAR" HorizontalAlignment="Center" Margin="0,262,0,0" VerticalAlignment="Top" Height="32" Width="62" Foreground="White" FontFamily="Roboto" Background="#FF5B5B5B"/>
+        <Button x:Name="btnAgregar" Content="AGREGAR" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="145" Height="40" Background="#FF157347" FontSize="14" FontWeight="Bold" FontFamily="Roboto" Foreground="White"/>
+        <Button x:Name="btnActualizar" Content="ACTUALIZAR" HorizontalAlignment="Left" Margin="187,0,0,0" VerticalAlignment="Center" Width="145" Height="40" Background="#FFFFCA2C" FontSize="14" Foreground="White" FontFamily="Roboto" FontWeight="Bold" />
+        <Button x:Name="btnEliminar" Content="ELIMINAR" HorizontalAlignment="Left" Margin="370,0,0,0" VerticalAlignment="Center" Width="145" Height="40" Background="#FFBB2D3B" FontFamily="Roboto" FontSize="14" Foreground="#FFFFFBFB" FontWeight="Bold" />
+        <Button x:Name="btnCerrar" Content="CERRAR" HorizontalAlignment="Left" Margin="540,0,0,0" VerticalAlignment="Center" Width="140" Height="40"  Background="#FF1C1F23" Foreground="White" FontSize="14" FontFamily="Roboto" FontWeight="Bold"/>
+        <Rectangle HorizontalAlignment="Left" Height="296" Margin="10,378,0,0" Stroke="Black" VerticalAlignment="Top" Width="680" Fill="#99FFFFFF"/>
+        <TextBox x:Name="filtro_txt" HorizontalAlignment="Left" Margin="409,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="30" FontSize="18" FontFamily="Roboto" Foreground="#FF6D6D6D" BorderBrush="#FF0A41E6" Background="#7FFFFFFF"/>
+        <Button x:Name="btnBuscar" Content="FILTRAR" HorizontalAlignment="Left" Margin="563,388,0,0" VerticalAlignment="Top" Width="55" Height="30" FontFamily="Roboto" Foreground="#FFED2F2F" Background="#FF31D2F2" BorderBrush="Black" FontWeight="Bold"/>
+        <Button x:Name="btnLimpiarFiltro" Content="LIMPIAR" HorizontalAlignment="Left" Margin="625,388,0,0" VerticalAlignment="Top" Width="55" Height="30" Background="#FFE2007C" BorderBrush="Black" FontWeight="Bold" FontFamily="Roboto" Foreground="White"/>
+        <DataGrid x:Name="ListaAlumnoDtg" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,428,0,0" Background="#B2F0F0F0" Height="246" VerticalAlignment="Top" HorizontalAlignment="Left" Width="680" IsReadOnly="True" SelectedCellsChanged="ListaAlumnoDtg_SelectedCellsChanged" RenderTransformOrigin="0.494,0.5"/>
+
     </Grid>
 </Window>
