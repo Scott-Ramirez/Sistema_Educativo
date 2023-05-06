@@ -48,5 +48,20 @@ namespace Sistema_Educativo
             this.Close();
             mainWindow.Show();
         }
+
+
+        //SECCION tabla datagrid  del formulario mostrando datos de la BD
+        private void ListaCalificacionesDtg_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
+        {
+            if (ListaCalificacionesDtg.SelectedItem != null)
+            {
+                Calificaciones calificaciones = (Calificaciones)ListaCalificacionesDtg.SelectedItem;
+                
+                
+            }
+
+        }
+
+
     }
 }
