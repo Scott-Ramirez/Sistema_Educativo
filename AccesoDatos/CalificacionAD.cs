@@ -51,6 +51,7 @@ namespace AccesoDatos
                         Calificaciones calificaciones = new Calificaciones();
                         calificaciones.IdEjercicio = Convert.ToInt32(reader["IdEjercicio"]);
                         calificaciones.Id_Alumno = Convert.ToInt32(reader["Id_Alumno"]);
+                        calificaciones.Primer_Nombre = Convert.ToString(reader["Primer_Nombre"]);
                         calificaciones.Nombre = Convert.ToString(reader["Nombre"]);
                         calificaciones.Realizado = Convert.ToBoolean(reader["Realizado"]);
                         calificaciones.Calificacion = Convert.ToInt32(reader["Calificacion"]);
