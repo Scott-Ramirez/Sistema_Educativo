@@ -23,6 +23,28 @@ namespace Sistema_Educativo
         public MainWindow()
         {
             InitializeComponent();
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+        }
+
+        private void clickAlumno(object sender, RoutedEventArgs e)
+        {
+            FormAlumno formAlumno = new FormAlumno();
+            this.Close();
+            formAlumno.Show();
+        }
+
+        private void clickCalificacion(object sender, RoutedEventArgs e)
+        {
+            FormCalificacion formCalificacion = new FormCalificacion();
+            this.Close();
+            formCalificacion.Show();
+        }
+
+        private void clickReporte(object sender, RoutedEventArgs e)
+        {
+            FormReportes formReportes = new FormReportes();
+            this.Close();
+            formReportes.Show();
         }
     }
 }
