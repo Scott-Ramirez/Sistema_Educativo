@@ -8,6 +8,10 @@
         Title="Menu Principal" Height="720" Width="1080">
     <Grid>
         <Image Source="/fondo.jpg" Margin="-148,-148,-204,-64"/>
+        <Rectangle HorizontalAlignment="Left" Height="460" Margin="122,141,0,0" Stroke="Black" VerticalAlignment="Top" Width="328" RadiusX="41.855" RadiusY="41.855" Fill="#7FFFFFFF"/>
+        <Button x:Name="btnAlumno" Content="Agregar Alumno" HorizontalAlignment="Left" Margin="196,185,0,0" VerticalAlignment="Top" Background="#FF328DAB" Width="180" Height="80" BorderBrush="White" Foreground="White" FontFamily="Roboto" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnCalificacion" Content="Agregar Calificacion" HorizontalAlignment="Left" Margin="196,331,0,0" VerticalAlignment="Top" Background="#FFE8CC5B" Width="180" Height="80" BorderBrush="White" Foreground="White" FontFamily="Roboto" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnReporte" Content="Reportes" HorizontalAlignment="Left" Margin="196,477,0,0" VerticalAlignment="Top" Background="#FFC98294" Width="180" Height="80" BorderBrush="White" FontFamily="Roboto" FontSize="14" FontWeight="Bold" Foreground="White"/>
 
     </Grid>
 </Window>
