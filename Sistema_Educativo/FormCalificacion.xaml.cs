@@ -32,6 +32,18 @@ namespace Sistema_Educativo
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             //Listar los datos de la tabla al iniciar 
             ListarCalificaciones();
+            cbo_estado.Items.Add("SI");
+            cbo_estado.Items.Add("NO");
+        }
+
+
+        public void llenarCampos(Calificaciones calificaciones)
+        {
+            Id_txt.Text = calificaciones.Id_Alumno.ToString();
+            cbo_estado.Text = calificaciones.Realizado.ToString().ToUpper();
+            txt_nombre.Text = calificaciones.Nombre.ToString();
+            txt_calificacion.Text = calificaciones.Calificacion.ToString();
+
         }
 
         //SECCION  mostrar datos en una tabla
@@ -55,9 +67,10 @@ namespace Sistema_Educativo
         {
             if (ListaCalificacionesDtg.SelectedItem != null)
             {
-                Calificaciones calificaciones = (Calificaciones)ListaCalificacionesDtg.SelectedItem;
-                
-                
+                Calificaciones calificaciones = new Calificaciones();
+                calificaciones = (Calificaciones)ListaCalificacionesDtg.CurrentItem;
+                llenarCampos(calificaciones);
+
             }
 
         }
