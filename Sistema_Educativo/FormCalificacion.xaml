@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sistema_Educativo"
         mc:Ignorable="d"
-        Title="FormCalificacion" Height="450" Width="800">
-    <Grid>
-        
+        Title="FormCalificacion" Height="624" Width="600">
+    <Grid Background="#FF0E2A47" Height="614" VerticalAlignment="Top">
+        <Label Content="Agregar Nueva Calificacion" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Roboto" Foreground="#FFFB7575" Width="600" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Rectangle HorizontalAlignment="Center" Height="153" Margin="0,51,0,0" Stroke="Black" VerticalAlignment="Top" Width="580" RadiusX="14.04" RadiusY="14.04" Fill="#99FFFFFF"/>
+        <Label Content="ID Alumno" HorizontalAlignment="Left" Margin="24,65,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Estado de la Evaluacion" HorizontalAlignment="Left" Margin="324,65,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Nombre del Ejercicio" HorizontalAlignment="Left" Margin="24,126,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Calificacion" HorizontalAlignment="Left" Margin="324,126,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontSize="14" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Margin="24,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox HorizontalAlignment="Left" Margin="24,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" Height="30"/>
+        <TextBox HorizontalAlignment="Left" Margin="324,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" Height="30"/>
+        <ComboBox HorizontalAlignment="Left" Margin="324,91,0,0" VerticalAlignment="Top" Width="251" Height="30"/>
+        <Button x:Name="btn_agregar" Content="AGREGAR" HorizontalAlignment="Left" Margin="62,218,0,0" VerticalAlignment="Top" Width="120" Height="40" FontSize="14" FontWeight="Bold" FontFamily="Roboto" Foreground="White" Background="#FF157347" BorderBrush="White"/>
+        <Button x:Name="btn_actualizar" Content="ACTUALIZAR" HorizontalAlignment="Center" Margin="0,218,0,0" VerticalAlignment="Top" Width="120" Height="40" BorderBrush="White" FontFamily="Roboto" FontSize="14" Foreground="White" Background="#FFFFCA2C" FontWeight="Bold"/>
+        <Button x:Name="btn_cerrar" Content="CERRAR" HorizontalAlignment="Left" Margin="412,218,0,0" VerticalAlignment="Top" Width="120" Height="40" FontFamily="Roboto" FontSize="14" FontWeight="Bold" Foreground="White" Background="#FF1C1F23" BorderBrush="White" Click="click_Cerrar"/>
+        <Rectangle HorizontalAlignment="Center" Height="308" Margin="0,272,0,0" Stroke="Black" VerticalAlignment="Top" Width="580" Fill="#7FFFFFFF"/>
+        <TextBox HorizontalAlignment="Left" Margin="412,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Height="30" Foreground="#FF9A9A9A" FontSize="16" FontFamily="Roboto"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,312,0,0" Height="268" VerticalAlignment="Top" HorizontalAlignment="Center" Width="580"/>
+
     </Grid>
 </Window>

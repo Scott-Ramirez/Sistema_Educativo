@@ -95,7 +95,7 @@ namespace AccesoDatos
                     sqlCommand.Parameters.AddWithValue("@Celular", alumno.Celular);
                     sqlCommand.Parameters.AddWithValue("@Direccion", alumno.Direccion);
                     sqlCommand.Parameters.AddWithValue("@Email", alumno.Email);
-                    sqlCommand.Parameters.AddWithValue("@FechadeNacimiento", alumno.Fecha_Nacimiento);
+                    sqlCommand.Parameters.AddWithValue("@FechaNacimiento", alumno.Fecha_Nacimiento);
                     sqlCommand.Parameters.AddWithValue("@Observaciones", alumno.Observaciones);
 
                     sqlConnection.Open();
