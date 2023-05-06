@@ -41,5 +41,12 @@ namespace Sistema_Educativo
             ListaCalificacionesDtg.ItemsSource = calificacionLN.ListarCalificacionesLN();
             liscal = (List<Calificaciones>)ListaCalificacionesDtg.ItemsSource;
         }
+
+        private void click_cerrar(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
+        }
     }
 }

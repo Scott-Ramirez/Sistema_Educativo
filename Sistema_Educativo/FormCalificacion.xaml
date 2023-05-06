@@ -21,7 +21,7 @@
         <Button x:Name="btn_actualizar" Content="ACTUALIZAR" HorizontalAlignment="Center" Margin="0,218,0,0" VerticalAlignment="Top" Width="120" Height="40" BorderBrush="White" FontFamily="Roboto" FontSize="14" Foreground="White" Background="#FFFFCA2C" FontWeight="Bold"/>
         <Rectangle HorizontalAlignment="Center" Height="308" Margin="0,272,0,0" Stroke="Black" VerticalAlignment="Top" Width="580" Fill="#7FFFFFFF"/>
         <DataGrid x:Name="ListaCalificacionesDtg" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,307,10,34"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="420,218,0,0" VerticalAlignment="Top" Background="#FF1C1F23" FontFamily="Roboto" FontSize="14" FontWeight="Bold" Foreground="White" Width="120" Height="40"/>
+        <Button x:Name="btnCerrar" Content="CERRAR" HorizontalAlignment="Left" Margin="420,218,0,0" VerticalAlignment="Top" Background="#FF1C1F23" FontFamily="Roboto" FontSize="14" FontWeight="Bold" Foreground="White" Width="120" Height="40" Click="click_cerrar"/>
 
     </Grid>
 </Window>
